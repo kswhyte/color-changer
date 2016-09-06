@@ -27,6 +27,7 @@ button {
 button:hover {
   background: #B2479A;
   border: #CC7FB5 #E5B6D5;
+  cursor: pointer;
 }
 
 @media (max-width: 320px) {
@@ -38,11 +39,11 @@ button:hover {
     margin: 20px auto;
   }
 
-  #random {
+  #random-button {
     display: block;
   }
 
-  #reset {
+  #reset-button {
     display: block;
     font-size: 1em;
     height: 50px;
