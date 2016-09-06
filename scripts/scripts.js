@@ -1,10 +1,6 @@
 
 $('#random-button').on('click', function() {
-  var randomColor = getColor();
-  while (randomColor === '#ffffff') {
-    getColor();
-  } 
-  $('html').css('background-color', randomColor);
+  $('html').css('background-color', getColor());
 });
 
 function getColor(){
@@ -13,7 +9,11 @@ function getColor(){
   while (color.length < 7){
     color += String.fromCharCode(ascii[Math.floor(Math.random() * 16)]);
   }
-  return color;
+  if (color === '#ffffff') {
+    getColor();
+  } else {
+    return color;
+  }
 }
 
 $('#reset-button').on('click', function() {
