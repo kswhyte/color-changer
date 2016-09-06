@@ -1,0 +1,50 @@
+html {
+  background: white;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50% auto;
+}
+
+button {
+  font-family: 'Open Sans', Bold 700, sans-serif;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  background: #E5B6D5;
+  border-width: 10px;
+  border-color: #B2479A #CC7FB5;
+  border-style: solid;
+  font-size: 1.5em;
+  height: 90px;
+  width: 200px;
+  margin: auto 30px;
+}
+
+button:hover {
+  background: #B2479A;
+  border: #CC7FB5 #E5B6D5;
+}
+
+@media (max-width: 320px) {
+  body {
+    flex-direction: column;
+  }
+
+  button {
+    margin: 20px auto;
+  }
+
+  #random {
+    display: block;
+  }
+
+  #reset {
+    display: block;
+    font-size: 1em;
+    height: 50px;
+  }
+}
